@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="20-jan-25-kyaseu00\CSS\styles.css">
+    <link rel="stylesheet" href="C:\Users\Putri Rizkia\Documents\SE RevoU\20-jan-25-kyaseu00\CSS\styles.css">
 </head>
 <body>
+    <header class="main-header">
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <section class="introduce">
+        <!--introduction-->
+  <article>
+      <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units. Note that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in detail.</p>
+  </article>
+  </section>
+
+    <main>
+        <!--Left Content-->
+        
+        <section>
+        <!--form-->
+        <form>
+            <div class="form-group">
+                <label for="input-berat-badan">Weight (kg)</label>
+                <input type="number" id="input-berat-badan name="weight" placeholder="kg">
+            </div>
     
+            <div class="form-group">
+                <label for="input-tinggi-badan">Height (cm)</label>
+                <input type="number" id="input-tinggi-badan name="height" placeholder="cm">
+            </div>
+    
+            <div class="form-group">
+                <label for="input-usia">Age</label>
+                <input type="number" id="input-usia">
+            </div>
+
+            <div>
+                <p class="form-gender">Gender</p>
+                
+                <label class="gender-container">Male
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="gender-checkmark"></span>
+                  </label>
+                  
+                  <label class="gender-container">Female
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="gender-checkmark"></span>
+                  </label>
+            </div>
+    
+            <div class="button-form">
+                <button class="Calculate">Calculate</button>
+                <button class="Reset">Reset</button>
+            </div>
+        </form>
+
+        <!--Information-->
+        <article>
+            <header class="information">
+                <h3>Feature Information</h3>
+            </header>
+            
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos penatibus auctor non primis ac eget penatibus urna. Donec fames maecenas habitant consequat faucibus. Diam metus fusce netus lacinia suscipit bibendum justo. Congue vel vestibulum ad pharetra cubilia nascetur ante finibus lobortis. Class vulputate accumsan finibus senectus aliquam ultrices sed. Inceptos accumsan cras tempor platea bibendum sodales ut. Porttitor donec varius ultrices taciti lacus maximus. Dictum lacinia turpis leo nulla faucibus est magnis sed libero. Venenatis erat euismod neque mus dapibus felis feugiat laoreet. Dictum tempus a lobortis viverra feugiat hac vehicula. Platea maecenas faucibus pretium; magna eget vehicula. Ultrices tincidunt pharetra ultrices nec dolor fringilla lorem. Consequat euismod arcu odio urna habitant semper. Sagittis lobortis facilisi integer quis, congue parturient. Afringilla sollicitudin est aenean sodales montes sociosqu purus. Eros aliquam mauris vel tellus dolor; vulputate class dui.</p>
+        </article>
+        </section>
+
+        <!--Right Content-->
+        <section>
+            <section class="result">
+                <header>
+                    <h2 style="margin-bottom: 10px;">Result</h2>
+                </header>
+    
+                <div>
+                    <span id="result-bmi">0</span>
+                    <br>
+                    <span id="your-result">Find your result here!</span>
+                </div>
+                <br>
+
+               <section>
+                <div>
+                    <button class="button-download">Download your result</button>
+                </div>
+               </section> 
+
+            </section>
+
+            <article class="information">
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos penatibus auctor non primis ac eget penatibus urna. Donec fames maecenas habitant consequat faucibus. Diam metus fusce netus lacinia suscipit bibendum justo. Congue vel vestibulum ad pharetra cubilia nascetur ante finibus lobortis. Class vulputate accumsan finibus senectus aliquam ultrices sed. Inceptos accumsan cras tempor platea bibendum sodales ut. Porttitor donec varius ultrices taciti lacus maximus. Dictum lacinia turpis leo nulla faucibus est magnis sed libero. Venenatis erat euismod neque mus dapibus felis feugiat laoreet. Dictum tempus a lobortis viverra feugiat hac vehicula. Platea maecenas faucibus pretium; magna eget vehicula. Ultrices tincidunt pharetra ultrices nec dolor fringilla lorem. Consequat euismod arcu odio urna habitant semper. Sagittis lobortis facilisi integer quis, congue parturient. Afringilla sollicitudin est aenean sodales montes sociosqu purus. Eros aliquam mauris vel tellus dolor; vulputate class dui.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <span>Made by kyas@2025</span>
+    </footer>
 </body>
 </html>

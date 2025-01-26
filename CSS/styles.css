@@ -1,1 +1,174 @@
 /* ini file css */
+
+main {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+    font-family: system-ui;
+}
+
+footer {
+    text-align: center;
+    font-size: x-small;
+    font-family: system-ui;
+}
+
+.main-header {
+    text-align: center;
+    color: rgb(64, 195, 224);
+    font-family: system-ui;
+}
+
+.introduce {
+    display: flex;
+    gap: 35px;
+    padding: 10px 30px 0px 30px;
+    font-family: system-ui;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+
+ form {
+    background-color: rgb(64 195 224 / 17%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    font-size: medium;
+}
+
+.button-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.form-gender {
+    margin: 0px;
+    padding: 0px 10px 10px 0px;
+}
+
+.gender-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: medium;
+}
+  
+  /* Hide the browser's default radio button */
+.gender-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  /* Create a custom radio button */
+.gender-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #cccccc;
+    border-radius: 50%;
+}  
+
+/* On mouse-over, add a grey background color */
+.gender-container:hover input ~ .gender-checkmark {
+    background-color: #989696;
+}
+  
+  /* When the radio button is checked, add a blue background */
+.gender-container input:checked ~ .gender-checkmark {
+    background-color: #2196F3;
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.gender-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+  .gender-container input:checked ~ .gender-checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.gender-container .gender-checkmark:after {
+     top: 6px;
+     left: 7px;
+     width: 8px;
+     height: 8px;
+      border-radius: 50%;
+      background: white;
+}
+
+.Calculate {
+    background-color: rgb(73, 163, 236);
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Reset {
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.information {
+    padding-top: 10px;
+}
+
+.result {
+    text-align: center;
+    background-color: rgb(64 195 224 / 17%);
+    border-radius: 10px;
+    padding: 15px 15px 40px 15px;
+}
+
+.button-download {
+    background-color: rgb(73, 163, 236);
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#result-bmi {
+    margin-top: 0px;
+    text-align: center;
+    font-size: xxx-large;
+    font-family: system-ui;
+    color: #757575;
+}
+
+#your-result {
+    text-align: center;
+    font-size: 15px;
+    font-family: system-ui;
+    color: #757575;
+}
