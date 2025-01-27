@@ -24,6 +24,7 @@ footer {
     gap: 35px;
     padding: 10px 30px 0px 30px;
     font-family: system-ui;
+    text-align: justify;
 }
 
 input[type=number], select {
@@ -32,23 +33,26 @@ input[type=number], select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
+    box-shadow: 3px 4px 5px 2px lightblue;
     
   }
 
  form {
     background-color: rgb(64 195 224 / 17%);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
+    box-shadow: 2px 3px 5px 2px lightblue;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 15px;
     padding-bottom: 15px;
     font-size: medium;
+    text-shadow: 2px 4px 4px lightblue;
 }
 
 .button-form {
@@ -61,6 +65,7 @@ input[type=number], select {
 .form-gender {
     margin: 0px;
     padding: 0px 10px 10px 0px;
+    text-shadow: 2px 4px 4px lightblue;
 }
 
 .gender-container {
@@ -70,6 +75,7 @@ input[type=number], select {
     margin-bottom: 12px;
     cursor: pointer;
     font-size: medium;
+    text-shadow: 2px 4px 4px lightblue;
 }
   
   /* Hide the browser's default radio button */
@@ -126,36 +132,43 @@ input[type=number], select {
     background-color: rgb(73, 163, 236);
     color: aliceblue;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
+    box-shadow: 2px 3px 5px 2px lightblue;
 }
 
 .Reset {
     background-color: aliceblue;
     color: black;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
+    box-shadow: 2px 3px 5px 2px lightblue;
 }
 
 .information {
     padding-top: 10px;
 }
 
+/*Right content*/
+
 .result {
     text-align: center;
     background-color: rgb(64 195 224 / 17%);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 15px 15px 40px 15px;
+    box-shadow: 3px 4px 5px 2px lightblue;
+    text-shadow: 2px 4px 4px lightblue;
 }
 
 .button-download {
     background-color: rgb(73, 163, 236);
     color: aliceblue;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
     margin-top: 10px;
+    box-shadow: 2px 3px 5px 2px lightblue;
 }
 
 #result-bmi {
