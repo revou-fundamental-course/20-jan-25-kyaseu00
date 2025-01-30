@@ -1,187 +1,405 @@
-/* ini file css */
+/* Ini File CSS */
+
+/*Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: lightskyblue;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
 
 main {
     display: flex;
-    gap: 35px;
-    padding: 30px;
-    font-family: system-ui;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: lightskyblue;
 }
 
-footer {
+.box {
+    width: 500px;
+    background: aliceblue;
+    border-radius: 15px;
     text-align: center;
-    font-size: x-small;
-    font-family: system-ui;
+    box-shadow: 2px 2px 20px 5px black;
 }
 
-.main-header {
+h2 {
+    color: #18a2f7;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0px;
+}
+
+.content {
+    padding: 0px 30px;
+}
+
+/* Form Input Age */
+.input {
+    background: aliceblue;
+    box-shadow: 0px 0px 95px -30px black;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    width: 50%;
     text-align: center;
-    color: rgb(64, 195, 224);
-    font-family: system-ui;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
 }
 
-.introduce {
-    display: flex;
-    gap: 35px;
-    padding: 10px 30px 0px 30px;
-    font-family: system-ui;
-    text-align: justify;
+/* Form Input Weight */
+.input-weight{
+    background: aliceblue;
+    box-shadow: 0px 0px 95px -30px black;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin-right: 15px;
+    margin-bottom: 20px;
 }
 
-input[type=number], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+.input-weight label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input-weight input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Form Input Height */
+.input-height{
+    background: aliceblue;
+    box-shadow: 0px 0px 95px -30px black;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.input-height label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input-height input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Button Form */
+button.calculate {
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+    color: aliceblue;
+    background: lightskyblue;
+    font-size: 14px;
     border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 3px 4px 5px 2px lightblue;
-    
-  }
-
- form {
-    background-color: rgb(64 195 224 / 17%);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 2px 3px 5px 2px lightblue;
+    padding: 10px 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
 }
 
-.form-group {
+button.calculate:hover {
+    background: lightskyblue;
+}
+
+
+/* Result */
+.result {
+    padding: 10px 20px;
+}
+
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: lightskyblue;
+    background-color: #dee5eb;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+#comment {
+    color: lightskyblue;
+    font-weight: 800;
+}
+
+.comment {
+    display: none;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+/* Footer */
+.footer-text {
+    text-decoration: none;
+    color: #282828cc;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    transition: all 0.5s;
+}
+
+.footer-text:hover {
+    color: #282828;
+}
+
+
+/* Form Input Gender */
+.gender {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: aliceblue;
+    box-shadow: 0px 0px 95px -30px black;
     border-radius: 15px;
-    padding-bottom: 15px;
-    font-size: medium;
-    text-shadow: 2px 4px 4px lightblue;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-.button-form {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding-top: 20px;
-}
-
-.form-gender {
-    margin: 0px;
-    padding: 0px 10px 10px 0px;
-    text-shadow: 2px 4px 4px lightblue;
-}
-
-.gender-container {
+/* Style for Radio */
+.gender .container {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    /* margin-button: 12px */
+    margin-top: 7px;
     cursor: pointer;
-    font-size: medium;
-    text-shadow: 2px 4px 4px lightblue;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-  
-  /* Hide the browser's default radio button */
-.gender-container input {
+
+/* Hide the browser's default radio button */
+.gender .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-  
-  /* Create a custom radio button */
-.gender-checkmark {
+
+/* Create acustom radio button */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #cccccc;
+    height: 25px;
+    width: 25px;
+    background-color: aliceblue;
     border-radius: 50%;
-}  
+}
 
 /* On mouse-over, add a grey background color */
-.gender-container:hover input ~ .gender-checkmark {
-    background-color: #989696;
+.gender .container:hover input ~ .checkmark {
+    background-color: grey;
 }
-  
-  /* When the radio button is checked, add a blue background */
-.gender-container input:checked ~ .gender-checkmark {
-    background-color: #2196F3;
+
+/* When the radio button is checked, add a blue background */
+.gender .container:hover input:checked ~ .checkmark {
+    background-color: lightskyblue;
 }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-.gender-checkmark:after {
+
+/* Create the indicator (dot/circle - hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .gender-container input:checked ~ .gender-checkmark:after {
+
+/* Show the indicator (dot/circle) when checked */
+.gender .container input:checked ~ .checkmark:after {
     display: block;
 }
-  
-  /* Style the indicator (dot/circle) */
-.gender-container .gender-checkmark:after {
-     top: 6px;
-     left: 7px;
-     width: 8px;
-     height: 8px;
-      border-radius: 50%;
-      background: white;
+
+/* Style the indicator (dot/circle) */
+.gender .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #09a1ff;
 }
 
-.Calculate {
-    background-color: rgb(73, 163, 236);
-    color: aliceblue;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 2px 3px 5px 2px lightblue;
+/* END STYLE FOR RADIO */
+
+.container-height-weight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.Reset {
-    background-color: aliceblue;
+
+
+
+
+/* The Modal Background */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed; /* stay in place */
+    z-index: 1; /* sit on top */
+    padding-top: 100px; /* location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full Height */
+    overflow: auto; /* enable scroll if needed */
+    background-color: black;
+    background-color: #00000066; /*black with opacity*/
+    padding-top: 300px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: lightskyblue -1px 2px 2px 1px;
+}
+
+#modal-text {
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
     color: black;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 2px 3px 5px 2px lightblue;
 }
 
-.information {
-    padding-top: 10px;
+.modal-wrong {
+    border: 2px solid lightcoral;
 }
 
-/*Right content*/
-
-.result {
-    text-align: center;
-    background-color: rgb(64 195 224 / 17%);
-    border-radius: 15px;
-    padding: 15px 15px 40px 15px;
-    box-shadow: 3px 4px 5px 2px lightblue;
-    text-shadow: 2px 4px 4px lightblue;
+.modal.correct {
+    border: 2px solid lightskyblue;
 }
 
-.button-download {
-    background-color: rgb(73, 163, 236);
-    color: aliceblue;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 2px 3px 5px 2px lightblue;
+/* The Close Button */
+.close {
+    color: gray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-#result-bmi {
-    margin-top: 0px;
-    text-align: center;
-    font-size: xxx-large;
-    font-family: system-ui;
-    color: #757575;
+.close:hover {
+    color: rgb(0, 132, 255);
 }
 
-#your-result {
-    text-align: center;
-    font-size: 15px;
-    font-family: system-ui;
-    color: #757575;
+
+
+
+
+.link-download {
+    position: fixed;
+    background-color: lightcoral;
+    margin: 20px;
+    padding: 10px 10px;
+    left: -0px;
+    border-radius: 5px;
+    bottom: -0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.43s ease-in-out;
+}
+
+.link-download {
+    padding-left: 7px;
+}
+
+.link-download:hover {
+    text-decoration: none;
+    background-color: black;
+}
+
+
+@media (max-width: 700px) {
+    .box {
+        width: 380px;
+    }
+
+    .input label {
+        font-size: 18px;
+    }
+
+    .input-height label .input-weight label {
+        font-size: 14px;
+    }
+
+    .input input .input-height input .input-weight input {
+        font-size: 24px;
+    }
+
+    .modal-content {
+        width: 380px;
+    }
+
+    .link-download {
+        display: none;
+    }
 }

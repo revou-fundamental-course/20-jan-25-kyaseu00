@@ -3,107 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="C:\Users\Putri Rizkia\Documents\SE RevoU\20-jan-25-kyaseu00\CSS\styles.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/20-jan-25-kyaseu00/CSS/styles.css">
 </head>
+
 <body>
-    <header class="main-header">
-        <h1>Kalkulator BMI</h1>
-    </header>
 
-    <section class="introduce">
-        <!--introduction-->
-  <article>
-      <p>Are you curious about your weight status? Our Body Mass Index (BMI) calculator provides a quick and easy way to assess your health. 
-        By simply entering your height and weight, you can determine your Body Mass Index (BMI), a valuable tool for 
-        understanding your body composition. BMI is a widely used measure that helps identify whether you are underweight, 
-        normal weight, overweight, or obese. Our calculator goes beyond just providing a number; it also offers personalized 
-        insights and tips to help you achieve your health goals. Whether you're looking to lose weight, gain muscle, or simply 
-        maintain a healthy lifestyle, our BMI calculator is a valuable resource.</p>
-  </article>
-  </section>
+<header>
+    <h1>Let's calculate your BMI!</h1>
+</header>
 
-    <main>
-        <!--Left Content-->
-        
-        <section>
-        <!--form-->
-        <form>
-            <div class="form-group">
-                <label for="input-berat-badan">Weight (kg)</label>
-                <input type="number" id="input-berat-badan name="weight" placeholder="kg">
-            </div>
-    
-            <div class="form-group">
-                <label for="input-tinggi-badan">Height (cm)</label>
-                <input type="number" id="input-tinggi-badan name="height" placeholder="cm">
-            </div>
-    
-            <div class="form-group">
-                <label for="input-usia">Age</label>
-                <input type="number" id="input-usia">
+<main>
+    <div class="container">
+
+        <div class="box">
+
+            <h2>BMI Calculator</h2>
+
+            <div class="content">
+
+                <div class="input">
+                    <label for="height">Age</label>
+                    <input type="number" class="text-input" id="age" autocomplete="off" required>
+                </div>
+
+                <div class="gender">
+
+                    <label class="container">
+                        <input type="radio" name="radio" id="m">
+                        <p class="text">Male</p>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">
+                        <input type="radio" name="radio" id="f">
+                        <p class="text">Female</p>
+                        <span class="checkmark"></span>
+                    </label>
+
+                </div>
+
+                <div class="container-height-weight">
+                    
+                    <div class="input-height">
+                        <label for="height">Height</label>
+                        <input type="number" id="height" placeholder=". . . cm" required>
+                    </div>
+
+                    <div class="input-weight">
+                        <label for="weight">Weight</label>
+                        <input type="number" id="weight" placeholder=". . . kg" required>
+                    </div>
+
+                </div>
+
+                <button class="calculate" id="submit" onclick="calculate();">Calculate</button>
+
             </div>
 
-            <div>
-                <p class="form-gender">Gender</p>
-                
-                <label class="gender-container">Male
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="gender-checkmark"></span>
-                  </label>
-                  
-                  <label class="gender-container">Female
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="gender-checkmark"></span>
-                  </label>
+            <div class="result">
+                <p>Your BMI is</p>
+                <div id="result">00.00</div>
+                <p class="comment"></p>
             </div>
-    
-            <div class="button-form">
-                <button class="Calculate">Calculate</button>
-                <button class="Reset">Reset</button>
-            </div>
-        </form>
 
-        <!--Information-->
-        <article>
-            <header class="information">
-                <h3>Feature Information</h3>
-            </header>
+            <footer>
+                <div class="footer">
+                    <a class="footer-text" href="https://www.instagram.com/kyastoday/">By Kyastoday</a>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <div class="information">
+        <p>BMI Calculator: Empowering You to Take Charge of Your Health
+
+            Our BMI (Body Mass Index) calculator is a convenient and informative tool designed to provide you with a quick assessment of your weight status. By simply inputting your height and weight, you can easily determine your BMI, which serves as a valuable indicator of your body composition. Our calculator goes beyond just providing a number; it also offers personalized insights and categorizes your weight status into different ranges, such as underweight, healthy weight, overweight, or obese. This information can be a helpful starting point for understanding your overall health and well-being.
             
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos penatibus auctor non primis ac eget penatibus urna. Donec fames maecenas habitant consequat faucibus. Diam metus fusce netus lacinia suscipit bibendum justo. Congue vel vestibulum ad pharetra cubilia nascetur ante finibus lobortis. Class vulputate accumsan finibus senectus aliquam ultrices sed. Inceptos accumsan cras tempor platea bibendum sodales ut. Porttitor donec varius ultrices taciti lacus maximus. Dictum lacinia turpis leo nulla faucibus est magnis sed libero. Venenatis erat euismod neque mus dapibus felis feugiat laoreet. Dictum tempus a lobortis viverra feugiat hac vehicula. Platea maecenas faucibus pretium; magna eget vehicula. Ultrices tincidunt pharetra ultrices nec dolor fringilla lorem. Consequat euismod arcu odio urna habitant semper. Sagittis lobortis facilisi integer quis, congue parturient. Afringilla sollicitudin est aenean sodales montes sociosqu purus. Eros aliquam mauris vel tellus dolor; vulputate class dui.</p>
-        </article>
-        </section>
+            Advantages of Using Our BMI Calculator:
+            
+            Speed and Convenience: Obtain your BMI results in seconds.
+            User-Friendly Interface: Simple and intuitive design for easy navigation.
+            Personalized Insights: Receive tailored information based on your BMI score.
+            No Cost: Our BMI calculator is completely free to use.
+            Accessibility: Available online, anytime, anywhere.</p>
+    </div>
 
-        <!--Right Content-->
-        <section>
-            <section class="result">
-                <header>
-                    <h2 style="margin-bottom: 10px;">Result</h2>
-                </header>
-    
-                <div>
-                    <span id="result-bmi">0</span>
-                    <br>
-                    <span id="your-result">Find your result here!</span>
-                </div>
-                <br>
+    <div class="disclaimer">
+        <p>Absolutely! Here's a concise 3-paragraph description highlighting the advantages of using a BMI calculator, 
+            along with a disclaimer emphasizing the importance of consulting a healthcare professional:
 
-               <section>
-                <div>
-                    <button class="button-download">Download your result</button>
-                </div>
-               </section> 
+            BMI Calculator: Empowering You to Take Charge of Your Health
+            
+            Our BMI (Body Mass Index) calculator is a convenient and informative tool designed to provide you with a quick 
+            assessment of your weight status. By simply inputting your height and weight, you can easily determine your BMI, 
+            which serves as a valuable indicator of your body composition. Our calculator goes beyond just providing a number; it also offers personalized insights and categorizes your weight status into different ranges, such as underweight, healthy weight, overweight, or obese. This information can be a helpful starting point for understanding your overall health and well-being.
+            
+            Advantages of Using Our BMI Calculator:
+            
+            Speed and Convenience: Obtain your BMI results in seconds.
+            User-Friendly Interface: Simple and intuitive design for easy navigation.
+            Personalized Insights: Receive tailored information based on your BMI score.
+            No Cost: Our BMI calculator is completely free to use.
+            Accessibility: Available online, anytime, anywhere.
+            Important Disclaimer:
+            
+            While our BMI calculator is a valuable tool for self-assessment, it is essential to remember that it does not replace professional medical advice. The information provided by the calculator is intended for general knowledge and informational purposes only, and does not constitute medical advice. It is crucial to consult with a qualified healthcare professional for any health concerns or before making any decisions related to your health or treatment.
+            </p>
+    </div>
 
-            </section>
+</main>
 
-            <article class="information">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos penatibus auctor non primis ac eget penatibus urna. Donec fames maecenas habitant consequat faucibus. Diam metus fusce netus lacinia suscipit bibendum justo. Congue vel vestibulum ad pharetra cubilia nascetur ante finibus lobortis. Class vulputate accumsan finibus senectus aliquam ultrices sed. Inceptos accumsan cras tempor platea bibendum sodales ut. Porttitor donec varius ultrices taciti lacus maximus. Dictum lacinia turpis leo nulla faucibus est magnis sed libero. Venenatis erat euismod neque mus dapibus felis feugiat laoreet. Dictum tempus a lobortis viverra feugiat hac vehicula. Platea maecenas faucibus pretium; magna eget vehicula. Ultrices tincidunt pharetra ultrices nec dolor fringilla lorem. Consequat euismod arcu odio urna habitant semper. Sagittis lobortis facilisi integer quis, congue parturient. Afringilla sollicitudin est aenean sodales montes sociosqu purus. Eros aliquam mauris vel tellus dolor; vulputate class dui.</p>
-            </article>
-        </section>
-    </main>
+<!--The modal-->
+<div id="my-modal" class="modal">
 
-    <footer>
-        <span>Made by kyas@2025</span>
-    </footer>
+    <!--Modal Content-->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+   
+<a href="bmi-calculator-javascript.zip" target="_blank" class="link-download">Download Source Code</a> 
+
+
+
+<script src="/20-jan-25-kyaseu00/JS/script.js"></script>
+
 </body>
 </html>
